@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stephen Currie's Web Portfolio</title>
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Stephen Currie's Web Portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">Applications</a></li>
+          <li><a href="#">Contact Me</a></li>
+          <li><a href="#">Resume</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- This is the main section of the page -->
+
+    <main>
+      <!-- This is the the grid layout defined in one section.  There are four rows: About, Application1, Appication2, Contact.  Each row has various numbers ofcolumns, but the left column is standard-->
+
+      <!-- This is the About row with three columns  -->
+
+      <div class="row">
+        <!-- About Left Column -->
+        <div class="column">
+          <div class="column-left">
+            <h2>About Me</h2>
+          </div>
+        </div>
+
+        <!-- About Picture Column -->
+        <div class="column">
+           <div class="column-aboutpicture">
+              <img src="http://via.placeholder.com/100x300" />
+          </div>
+        </div>
+
+        <!-- About Text Column -->
+        <div class="column">
+          <div class="column-abouttext">
+             <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              eget nisi urna. Quisque elementum egestas elit at facilisis.
+              Maecenas eu sapien sollicitudin quam tempus consequat et eu
+              turpis. Interdum et malesuada fames ac ante ipsum primis in
+              faucibus. Aliquam vestibulum euismod lacus vitae tincidunt. Sed
+              ultrices commodo luctus. Nullam eros lectus, congue ut lobortis
+              non, commodo eget lacus. Curabitur vel consequat turpis.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- This is the First Application row with two columns  -->
+
+      <div class="row app1">
+        
+        <!-- Application Left Column -->
+         <div class="column">
+            <div class="column-left">
+               <h2>Applications</h2>
+            </div>
+         </div>
+
+        <!-- Main Applicaton Column -->
+        <div class="column">
+          <div class="column-mainapp">
+            <img src="http://via.placeholder.com/640x360" />
+          </div>
+        </div>
+      </div>
+
+      <!-- This is the Second Application row with three columns  -->
+
+       <div class="row app2">
+
+        <!-- Application Left Column just for spacing -->
+
+        <div class="column">
+          <div class="column-left">
+       
+          </div>
+        </div>
+
+        <!-- Application 2 Column -->
+        <div class="column">
+          <div class="column-app2">
+            <img src="http://via.placeholder.com/100x300" />
+          </div>
+        </div>
+
+        <!-- Application 3 Column -->
+        <div class="column">
+          <div class="column-app3">
+            <img src="http://via.placeholder.com/100x300" />
+          </div>
+        </div>
+      </div>
+
+      <!-- This is the Contact Me row with two columns  -->
+
+      <div class="row contact">
+        <!-- Application Left Column -->
+        <div class="column">
+          <div class="column-left">
+            <h2>Contact Me</h2>
+          </div>
+        </div>
+
+        <!-- Contact Me Form -->
+        <div class="column">
+          <div class="column-contact">
+            <!-- This is the form input -->
+            <form action="/action_page.php">
+              <label for="fname">First Name</label>
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Your name.."
+              />
+
+              <label for="lname">Last Name</label>
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Your last name.."
+              />
+
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+
+              <label for="subject">Subject</label>
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Write something.."
+                style="height: 200px"
+              ></textarea>
+
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <h3>2022</h3>
+    </footer>
+  </body>
+</html>

@@ -3,7 +3,10 @@
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
+
+
 body {
+  min-width: 600px;
 }
 
 header {
@@ -67,6 +70,17 @@ nav a {
   margin-top: 30px;
   margin-right: 10px;
    flex-grow: 0;
+  
+
+
+}
+
+.columnl2 {
+  width: 200px;
+  text-align: right;
+  margin-top: 30px;
+  margin-right: 10px;
+   flex-grow: 0;
 
 
 }
@@ -76,6 +90,7 @@ nav a {
   text-align: right;
   border-right: 1px solid #000;
   flex-grow: 0;
+
 
 }
 
@@ -97,12 +112,12 @@ nav a {
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
-  flex: .75;
-  
+  flex: 1;  
   }
 
 .column-abouttext {
   margin: 0 0;
+  min-width: 400px;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 0px;
@@ -141,6 +156,7 @@ h3 {
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
+
 }
 
 .column-app2 {
@@ -153,6 +169,7 @@ h3 {
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
+
 }
 
 footer {
@@ -164,13 +181,15 @@ footer {
   border: solid black;
   border-radius: 30px;
 }
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 992px) {
   h2 {
     text-align: left;
     border: none;
   }
 
-
+.columnl2 {
+  display: none;
+}
 
   .columnlspace {
     flex-grow: 0;

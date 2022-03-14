@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stephen Currie's Web Portfolio</title>
-    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
 
@@ -13,10 +13,9 @@
       <h1>Stephen Currie's Web Portfolio</h1>
       <nav>
         <ul>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Applications</a></li>
-          <li><a href="#">Contact Me</a></li>
-          <li><a href="#">Resume</a></li>
+          <li><a href="#aboutme">About Me</a></li>
+          <li><a href="#applications">Applications</a></li>
+          <li><a href="#contactme">Contact Me</a></li>
         </ul>
       </nav>
     </header>
@@ -30,132 +29,130 @@
 
       <div class="row">
         <!-- About Left Column -->
-        <div class="columnl">
-          <div class="column-left">
-            <h2>About Me</h2>
-          </div>
+        <div class="columnl" id="aboutme">
+          <h2>About Me</h2>
         </div>
 
+        <!-- Vertical Line  Column -->
+
+        <div class="column-vertline"></div>
+
         <!-- About Picture Column -->
-        <div class="column">
-           <div class="column-aboutpicture">
-              <img src="assets/images/scurriestand.png">
-          </div>
+
+        <div class="column-aboutpicture">
+          <img src="./assets/images/scurriestand.png" />
         </div>
 
         <!-- About Text Column -->
-        <div class="column">
-          <div class="column-abouttext">
-             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              eget nisi urna. Quisque elementum egestas elit at facilisis.
-              Maecenas eu sapien sollicitudin quam tempus consequat et eu
-              turpis. Interdum et malesuada fames ac ante ipsum primis in
-              faucibus. Aliquam vestibulum euismod lacus vitae tincidunt. Sed
-              ultrices commodo luctus. Nullam eros lectus, congue ut lobortis
-              non, commodo eget lacus. Curabitur vel consequat turpis.
-            </p>
-          </div>
+
+        <div class="column-abouttext">
+         
+          <ul class="list">
+            <li>Technology Leader (Ability to create high performing teams, Establishes clarity in complex environments, Growth oriented, Understands how to use technology to achieve business results, Optimizes costs. Builds cross-functional partnerships, Develops practical strategies and executes)
+            </li>
+              
+                <li>Drive for Results (Goes beyond job responsibilities to achieve success)</li>
+                <li>Business Acumen (Objectively looks at data to determine and execute optimal plan)</li>
+                <li>Collaboration and Partnership (Ability to work with a range of personalities, focus on teamwork, culture, process and end-results)</li>
+                <li>Drive for Results (Goes beyond job responsibilities to achieve success)</li>
+                <li>Functional Knowledge (Cloud Hosting, Networking, Security, Applications, Workforce Productivity, Global Operations, IT Service Management, Experience in both Consumer and Business space) </li>
+              </ul>
+            
         </div>
       </div>
 
-      <!-- This is the First Application row with two columns  -->
+      <!-- This is the First Application row with three columns  -->
 
       <div class="row app1">
-        
         <!-- Application Left Column -->
-         <div class="columnl">
-            <div class="column-left">
-               <h2>Applications</h2>
-            </div>
-         </div>
+        <div class="columnl" id="applications">
+          <h2>Applications</h2>
+        </div>
+
+        <!-- Vertical Line  Column -->
+
+        <div class="column-vertline"></div>
 
         <!-- Main Applicaton Column -->
-        <div class="column">
-          <div class="column-mainapp">
-            <img src="http://via.placeholder.com/640x360" />
-          </div>
+
+        <div class="column-mainapp">
+          <img src="assets/images/application1.png" />
         </div>
       </div>
 
       <!-- This is the Second Application row with three columns  -->
 
-       <div class="row app2">
-
+      <div class="row app2">
         <!-- Application Left Column just for spacing -->
 
-        <!-- <div class="columnl">
-          <div class="column-left">
-       
-          </div>
-        </div> -->
+        <div class="columnl"></div>
+
+        <!-- Vertical Line  Column -->
+
+        <div class="column-vertline"></div>
 
         <!-- Application 2 Column -->
-        <div class="column">
-          <div class="column-app2">
-            <img src="http://via.placeholder.com/300x200" />
-          </div>
+
+        <div class="column-app2">
+          <img src="assets/images/application2.png" />
         </div>
 
         <!-- Application 3 Column -->
-        <div class="column">
-          <div class="column-app2">
-            <img src="http://via.placeholder.com/300x200" />
-          </div>
+
+        <div class="column-app2">
+          <img src="assets/images/application3.png" />
         </div>
       </div>
 
       <!-- This is the Contact Me row with two columns  -->
 
       <div class="row contact">
-        <!-- Application Left Column -->
-        <div class="columnl">
-          <div class="column-left">
-            <h2>Contact Me</h2>
-          </div>
+
+        <!-- Contact Me Left Column -->
+        <div class="columnl" id="contactme">
+          <h2>Contact Me</h2>
         </div>
+
+        <!-- Vertical Line  Column -->
+
+        <div class="column-vertline"></div>
 
         <!-- Contact Me Form -->
-        <div class="column">
-          <div class="column-contact">
-            <!-- This is the form input -->
-            <form action="/action_page.php">
-              <label for="fname">First Name</label>
-              <input
-                type="text"
-                id="fname"
-                name="firstname"
-                placeholder="Your name.."
-              />
 
-              <label for="lname">Last Name</label>
-              <input
-                type="text"
-                id="lname"
-                name="lastname"
-                placeholder="Your last name.."
-              />
+        <div class="column-contact">
+          <!-- This is the form input -->
+          <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+            />
 
-              <label for="country">Country</label>
-              <select id="country" name="country">
-                <option value="australia">Australia</option>
-                <option value="canada">Canada</option>
-                <option value="usa">USA</option>
-              </select>
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+            />
 
-              <label for="subject">Subject</label>
-              <textarea
-                id="subject"
-                name="subject"
-                placeholder="Write something.."
-                style="height: 200px"
-              ></textarea>
+            
 
-              <input type="submit" value="Submit" />
-            </form>
-          </div>
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+      
+            ></textarea>
+
+            <input type="submit" value="Submit" />
+          </form>
         </div>
-      </div>
+        </div>
+ 
     </main>
 
     <footer>

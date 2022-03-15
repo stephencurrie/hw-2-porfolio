@@ -166,6 +166,8 @@ h3 {
 
 }
 
+
+
 .column-app2 {
   text-align: center;
   padding-top: 20px;
@@ -178,6 +180,8 @@ h3 {
   flex: 1;
 
 }
+
+
 
 .column-contact {
   padding-top: 20px;
@@ -237,6 +241,7 @@ footer {
     flex-grow: 0;
     width: 1px;
   }
+
   nav ul {
     flex-direction: column;
     min-width: 100px;
